@@ -1,0 +1,33 @@
+{
+    "version": "nightly",
+    "description": "Chat client for https://twitch.tv",
+    "homepage": "https://github.com/SevenTV/chatterino7/releases/tag/nightly-build",
+    "license": "MIT",
+    "suggest": {
+        "vcredist": [
+            "extras/vcredist2013",
+            "extras/vcredist2022"
+        ]
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SevenTV/chatterino7/releases/download/nightly-build/chatterino-windows-x86-64-Qt-6.12.0.zip"
+        }
+    },
+    "extract_dir": "Chatterino2",
+    "bin": "chatterino.exe",
+    "shortcuts": [
+        [
+            "chatterino.exe",
+            "Chatterino (Nightly)"
+        ]
+    ],
+    "persist": [
+        "Cache",
+        "Logs",
+        "Misc",
+        "ProfileAvatars",
+        "Settings",
+        "Themes"
+    ]
+}
